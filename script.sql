@@ -48,6 +48,6 @@ VALUES ('attractions1', 100, 100, 1),
 
 INSERT INTO restaurants(`name`, age, city_id)
 VALUES ('restaurants1', 100, 1),
-       ('restaurants1', 100, 1),
-       ('restaurants2', 100, 2),
-       ('restaurants2', 100, 2);
+       ('restaurants2', 100, 1),
+       ('restaurants3', 100, 2),
+       ('restaurants4', 100, 2);
