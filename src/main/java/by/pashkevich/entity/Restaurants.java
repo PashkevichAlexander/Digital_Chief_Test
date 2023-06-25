@@ -17,11 +17,14 @@ public class Restaurants {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     @Column
     private String name;
+
     @Column
     private long age;
-    @ManyToOne(fetch = FetchType.LAZY)
+
+    @ManyToOne
     @JoinColumn
     private City city;
 }

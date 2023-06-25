@@ -17,7 +17,7 @@ public class AttractionsServiceImpl implements AttractionsService {
 
     @Override
     public Attractions get(Long id) {
-        return attractionsRepository.findById(id).orElseThrow(() -> new RuntimeException("Cant find object by id"));
+        return attractionsRepository.findById(id).orElseThrow(() -> new RuntimeException("Cant find Attractions by id"));
     }
 
     @Override

@@ -2,7 +2,6 @@ package by.pashkevich.repository;
 
 
 import by.pashkevich.entity.Attractions;
-import by.pashkevich.entity.City;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

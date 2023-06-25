@@ -1,4 +1,43 @@
 ###
+                        #ATTRACTIONS
+###
 GET localhost:8080/attractions/all
+
+###
+GET localhost:8080/attractions/get?id=1
+
+###
+POST localhost:8080/attractions/post
+Content-type: application/json
+
+{
+   "name":"attractions5",
+   "price":150,
+   "age":100,
+   "city":{
+      "id":2
+   }
+}
+
+###
+                        #RESTAURANTS
+###
+GET localhost:8080/restaurants/all
+
+###
+GET localhost:8080/restaurants/get?id=1
+
+###
+POST localhost:8080/restaurants/post
+Content-type: application/json
+
+{
+  "name":"attractions5",
+  "price":150,
+  "age":100,
+  "city":{
+    "id":2
+  }
+}
 
 ###
