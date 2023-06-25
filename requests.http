@@ -1,5 +1,5 @@
 ###
-                        #ATTRACTIONS
+            #ATTRACTIONS
 ###
 GET localhost:8080/attractions/all
 
@@ -20,7 +20,7 @@ Content-type: application/json
 }
 
 ###
-                        #RESTAURANTS
+          #RESTAURANTS
 ###
 GET localhost:8080/restaurants/all
 
@@ -32,12 +32,33 @@ POST localhost:8080/restaurants/post
 Content-type: application/json
 
 {
-  "name":"attractions5",
-  "price":150,
+  "name":"restaurant5",
   "age":100,
   "city":{
     "id":2
   }
 }
+
+###
+             #City
+###
+GET localhost:8080/city/all
+
+###
+GET localhost:8080/city/get?id=1
+
+###
+POST localhost:8080/city/post
+Content-type: application/json
+
+{
+  "name": "Vitebsk",
+  "population": 100000,
+  "square":100,
+  "capital": false
+}
+
+###
+GET localhost:8080/city/delete?id=3
 
 ###

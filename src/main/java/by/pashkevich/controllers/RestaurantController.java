@@ -18,7 +18,8 @@ public class RestaurantController {
         return restaurantsService.getAll();
     }
 
-    @GetMapping("/all")
+    @GetMapping("/get")
+    @ResponseBody
     public Restaurants get(@RequestParam long id){
         return restaurantsService.get(id);
     }
@@ -29,6 +30,7 @@ public class RestaurantController {
     }
 
     @GetMapping("/delete")
+    @ResponseBody
     public void delete(@RequestParam long id){
         restaurantsService.delete(id);
     }

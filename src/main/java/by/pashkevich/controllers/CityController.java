@@ -20,6 +20,7 @@ public class CityController {
     }
 
     @GetMapping("/get")
+    @ResponseBody
     public City get(@RequestParam long id){
         return cityService.get(id);
     }
@@ -30,6 +31,7 @@ public class CityController {
     }
 
     @GetMapping("/delete")
+    @ResponseBody
     public void delete(@RequestParam long id){
         cityService.delete(id);
     }
