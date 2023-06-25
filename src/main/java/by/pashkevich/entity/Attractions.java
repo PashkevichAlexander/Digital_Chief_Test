@@ -28,7 +28,7 @@ public class Attractions {
     @Column
     private long age;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn
     private City city;
 }

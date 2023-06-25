@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/Chief_db
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 867771Zx
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
