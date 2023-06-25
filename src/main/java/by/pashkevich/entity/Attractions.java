@@ -4,8 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.hibernate.annotations.OnDelete;
+import org.hibernate.annotations.OnDeleteAction;
+
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 
 @Getter
@@ -14,7 +18,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Entity
 @Table
-public class Attractions {
+public class Attractions implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -30,5 +34,6 @@ public class Attractions {
 
     @ManyToOne
     @JoinColumn
+//    @OnDelete(action = OnDeleteAction.CASCADE)
     private City city;
 }

@@ -8,7 +8,7 @@ Chief_db;
 
 create table city
 (
-    id         bigint PRIMARY KEY AUTO_INCREMENT,
+    id         bigint PRIMARY KEY  AUTO_INCREMENT ,
     `name`     varchar(255),
     population bigint,
     is_capital boolean,
@@ -22,7 +22,7 @@ create table attractions
     price   bigint,
     age     bigint,
     city_id bigint,
-    FOREIGN KEY (city_id) REFERENCES city (id)
+    FOREIGN KEY (city_id) REFERENCES city (id) ON DELETE CASCADE
 );
 
 create table restaurants
@@ -31,7 +31,7 @@ create table restaurants
     `name`  varchar(255),
     age     bigint,
     city_id bigint,
-    FOREIGN KEY (city_id) REFERENCES city (id)
+    FOREIGN KEY (city_id) REFERENCES city (id) ON DELETE CASCADE
 );
 
 
@@ -51,3 +51,5 @@ VALUES ('restaurants1', 100, 1),
        ('restaurants2', 100, 1),
        ('restaurants3', 100, 2),
        ('restaurants4', 100, 2);
+
+
