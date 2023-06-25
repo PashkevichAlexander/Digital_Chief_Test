@@ -4,7 +4,6 @@ import by.pashkevich.entity.Attractions;
 import by.pashkevich.repository.AttractionsRepository;
 import by.pashkevich.service.AttractionsService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

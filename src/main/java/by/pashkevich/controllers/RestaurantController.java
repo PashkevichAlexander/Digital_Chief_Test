@@ -14,24 +14,22 @@ public class RestaurantController {
     private final RestaurantsService restaurantsService;
 
     @GetMapping("/all")
-    public List<Restaurants> getAll(){
+    public List<Restaurants> getAll() {
         return restaurantsService.getAll();
     }
 
-    @GetMapping("/get")
-    @ResponseBody
-    public Restaurants get(@RequestParam long id){
+    @GetMapping("/{id}")
+    public Restaurants get(@PathVariable long id) {
         return restaurantsService.get(id);
     }
 
-    @PostMapping ("/post")
-    public Restaurants save(@RequestBody Restaurants restaurants){
+    @PostMapping
+    public Restaurants save(@RequestBody Restaurants restaurants) {
         return restaurantsService.save(restaurants);
     }
 
-    @GetMapping("/delete")
-    @ResponseBody
-    public void delete(@RequestParam long id){
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable long id) {
         restaurantsService.delete(id);
     }
 }

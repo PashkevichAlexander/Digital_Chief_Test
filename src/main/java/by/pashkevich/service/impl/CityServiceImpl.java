@@ -1,9 +1,7 @@
 package by.pashkevich.service.impl;
 
-import by.pashkevich.entity.Attractions;
 import by.pashkevich.entity.City;
 import by.pashkevich.repository.CityRepository;
-import by.pashkevich.service.AttractionsService;
 import by.pashkevich.service.CityService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

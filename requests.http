@@ -4,19 +4,36 @@
 GET localhost:8080/attractions/all
 
 ###
-GET localhost:8080/attractions/get?id=1
+GET localhost:8080/attractions/1
 
 ###
 POST localhost:8080/attractions/post
 Content-type: application/json
 
 {
-   "name":"attractions5",
-   "price":150,
-   "age":100,
-   "city":{
-      "id":2
-   }
+  "name": "attractions5",
+  "price": 150,
+  "age": 100,
+  "city": {
+    "id": 2
+  }
+}
+
+###
+DELETE localhost:8080/attractions/1
+
+###
+POST localhost:8080/attractions
+Content-type: application/json
+
+{
+  "id": 2,
+  "name": "attractions6",
+  "price": 150,
+  "age": 100,
+  "city": {
+    "id": 2
+  }
 }
 
 ###
@@ -25,19 +42,23 @@ Content-type: application/json
 GET localhost:8080/restaurants/all
 
 ###
-GET localhost:8080/restaurants/get?id=1
+GET localhost:8080/restaurants/1
 
 ###
-POST localhost:8080/restaurants/post
+POST localhost:8080/restaurants
 Content-type: application/json
 
 {
-  "name":"restaurant5",
-  "age":100,
-  "city":{
-    "id":2
+  "id": 2,
+  "name": "restaurant6",
+  "age": 100,
+  "city": {
+    "id": 2
   }
 }
+
+###
+DELETE localhost:8080/restaurants/7
 
 ###
              #City
@@ -45,20 +66,32 @@ Content-type: application/json
 GET localhost:8080/city/all
 
 ###
-GET localhost:8080/city/get?id=1
+GET localhost:8080/city/1
 
 ###
-POST localhost:8080/city/post
+POST localhost:8080/city
 Content-type: application/json
 
 {
   "name": "Vitebsk",
   "population": 100000,
-  "square":100,
+  "square": 100,
   "capital": false
 }
 
 ###
-GET localhost:8080/city/delete?id=3
+POST localhost:8080/city
+Content-type: application/json
+
+{
+  "id": 4,
+  "name": "Mogilev",
+  "population": 100000,
+  "square": 100,
+  "capital": false
+}
+
+###
+DELETE localhost:8080/city/4
 
 ###
