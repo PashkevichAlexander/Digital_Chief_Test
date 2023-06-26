@@ -7,7 +7,7 @@ GET localhost:8080/attractions/all
 GET localhost:8080/attractions/1
 
 ###
-POST localhost:8080/attractions/post
+POST localhost:8080/attractions
 Content-type: application/json
 
 {
@@ -58,7 +58,7 @@ Content-type: application/json
 }
 
 ###
-DELETE localhost:8080/restaurants/7
+DELETE localhost:8080/restaurants/3
 
 ###
              #City

@@ -4,8 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -29,6 +27,5 @@ public class Restaurants implements Serializable {
 
     @ManyToOne
     @JoinColumn
-//    @OnDelete(action = OnDeleteAction.CASCADE)
     private City city;
 }
